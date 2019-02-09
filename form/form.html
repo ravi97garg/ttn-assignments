@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<title>TTN</title>
+</head>
+
+<body>
+
+	<div id="main">
+		<header>
+			<nav>
+				<span id="logo">TO THE NEW</span>
+				<ul>
+					<li><a href="#">Quick Help</a></li>
+					<li><a href="#">Home</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+
+		<section>
+			<div style="width: 600px; margin: auto;">
+				
+				<form name="f-data">
+					<div style="color: #fff; background-color: #BBC0C9; padding: 20px; border-radius: 8px 8px 0px 0px; ">
+						<h1 style="margin: 0;">Bug Report</h1>
+					</div>
+					<div class="formBody">
+						<div class="formElement">
+							<div><label for="title">Title</label></div>
+							<input type="text" name="title" required>
+						</div>
+						<div class="formElement">
+							<div><label for="description">Description</label></div>
+							<textarea name="Description"></textarea>
+						</div>
+						<div class="formElement">
+							<div><label for="description">Operating System</label></div>
+							<select style="background-color: #00C69D; color: #fff;">
+								<option style="padding: 8px;" value="windows">Windows</option>
+								<option style="padding: 8px;" value="linux">Linux</option>
+								<option style="padding: 8px;" value="macintosh">Macintosh</option>
+							</select>
+						</div>
+						<div class="formElement">
+							<div><label for="description">Product</label></div>
+							<select style="background-color: #00C69D; color: #fff;">
+								<option style="padding: 8px;" value="formoid">Formoid</option>
+								<option style="padding: 8px;" value="mobirise">Mobirise</option>
+							</select>
+						</div>
+						<div class="formElement">
+							<div><label for="version">Version</label></div>
+							<input style="width: 20%" type="text" name="version" required>
+						</div>
+						<div class="formElement">
+							<div><label for="title">License</label></div>
+							<input type="radio" name="license"> Free
+							<input type="radio" name="license"> Business
+						</div>
+						<div class="formElement">
+							<div><label for="severity">Severity</label></div>
+							<select style="background-color: #00C69D; color: #fff;">
+								<option style="padding: 8px;" value="critical">Critical</option>
+								<option style="padding: 8px;" value="non critical">Non Critical</option>
+							</select>
+						</div>
+						<div class="formElement">
+							<div><label for="file">Attachments</label></div>
+							<input type="file" name="file" required>
+						</div>
+					</div>
+					<div class="formFooter">
+						<input type="submit" name="submit" value="Send" style="margin: 20px; width: 15%; float: right; background-color: #00C69D; padding: 8px; color: #fff; border: 1px solid #00C69D; border-radius: 4px; font-weight: bold;">
+					</div>
+				</form>		
+			</div>
+		</section>
+
+		<!-- <footer>
+			<p style="text-align: center;">&copy; Ravi Garg</p>
+		</footer> -->
+
+	</div>
+</body>
+
+</html>
