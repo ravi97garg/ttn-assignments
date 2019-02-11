@@ -98,3 +98,8 @@ border-color: #BBC0C9;
 	border-bottom: 1px solid #BBC0C9;
 	border-top: 1px solid #BBC0C9;
 }
+
+.radioOptions {
+	width: 45%;
+	display: inline-block;
+}
