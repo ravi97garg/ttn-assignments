@@ -1,0 +1,99 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #1f1f1f;
+}
+
+#main {
+	width: 90%;
+	margin: auto;
+	background-color: #111111;
+}
+
+header {
+	padding: 14px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0px;
+}
+
+#logo {
+	font-size: 30px;
+	font-weight: bolder;
+	color: #fff;
+}
+
+li {
+  float: left;
+  padding: 0 10 0 10;
+}
+
+li a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+li a:hover:not(.active) {
+  color: #ccc;
+}
+
+.active {
+  background-color: #ccc;
+}
+
+input{
+	width: 100%;
+	height: 30px;
+}
+
+textarea {
+	width: 100%;
+	height: 80px;
+}
+
+select, option {
+	width: 100%;
+	padding: 10px;
+}
+
+input[type="radio"] {
+	width: 12px;
+}
+
+label {
+	color: #000;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+form {
+border : 1px solid #000;
+border-bottom: 0px;
+margin: 20px; 
+border-radius: 8px;
+border-color: #BBC0C9;
+}
+
+.formElement {
+	padding-top: 8px;
+}
+
+.formBody {
+	padding-left: 20px; 
+	padding-right: 20px; 
+	background-color: #fff; 
+	padding-bottom: 20px;
+}
+
+.formFooter {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	border-radius: 8px;
+	border-bottom: 1px solid #BBC0C9;
+}
