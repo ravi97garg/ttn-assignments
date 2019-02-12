@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<title>TTN</title>
+
+</head>
+
+<body>
+
+	<div id="main">
+		<header>
+			<nav>
+				<span id="logo">TO THE NEW</span>
+				<ul>
+					<li><a href="#">Quick Help</a></li>
+					<li><a href="#">Home</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+
+		<section>
+			<div style="width: 600px; margin: auto; text-align: center;">
+				<h2>Copy Objects</h2>
+				<h3>Output for Q. 4</h3>
+				<div style="width: 100%;">
+					<div style="width: 40%; margin: 20px; display: inline-block;">
+						Source
+						<textarea id="source">{"name": "John", "age": 31, "city": "New York"}</textarea>
+					</div>
+					<div style="width: 40%; margin: 20px; display: inline-block;">
+						Target
+						<textarea id="target" readonly>{}</textarea>
+					</div>
+				</div>
+				<input type="button" style="width: fit-content;" name="copy" value="Copy from Source to Target" onclick='copyObjects()'>
+
+			<p id="message"></p>
+					
+			</div>
+		</section>
+
+		<!-- <footer>
+			<p style="text-align: center;">&copy; Ravi Garg</p>
+		</footer> -->
+
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
