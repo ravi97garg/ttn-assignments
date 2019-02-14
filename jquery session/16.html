@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+  	thead {
+  		background-color: yellow;
+  	}
+  </style>
+</head>
+<body>
+	<button>Click Me!</button>
+  <div id="main"></div>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $("button").click(function() {
+            $.ajax({
+            	url: "https://jsonplaceholder.typicode.com/posts", 
+            	async: false, 
+            	contentType: "application/json; charset=utf-8",
+            	success: function(result) {
+            		output = "<table><thead><tr><th>userId</th><th>id</th><th>title</th><th>body</th><th>action</th></tr></thead><tbody>";
+            		for (i=0; i<result.length; i++) {
+            			output += "<tr>";
+            			userId = result[i].userId;
+            			id = result[i].id;
+            			title = result[i].title;
+            			body = result[i].body;
+            			output += "<td>"+userId+"</td><td>"+id+"</td><td>"+title+"</td><td>"+body+"</td><td><button class='delete-data-btn'>DELETE</button></td></tr>";
+                }
+            		$("div").html(output);
+              }
+            });
+          });
+      });
+
+      $('#main').on('click', '.delete-data-btn', function() {
+        var cell = $(this).parent().parent();
+        // console.log($(this).parent().prev().prev().prev().text());
+        $.ajax({
+          url: "https://jsonplaceholder.typicode.com/posts/"+$(this).parent().prev().prev().prev().text(), 
+          async: false,
+          method: 'DELETE',
+          contentType: "application/json; charset=utf-8",
+          success: function(result) {
+            console.log("deleted succesfully: "+JSON.stringify(result));
+          },
+          error: function(error) {
+            console.log(error.message);
+          }
+        });
+        $(cell).remove();
+      });
+  </script>
+</body>
+</html>

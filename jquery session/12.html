@@ -10,28 +10,31 @@
 
   <!-- <link href="css/normalize.css" rel="stylesheet"> -->
   <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <style type="text/css">
+    #main {
+      padding: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-  <a>Google</a>
-
-  <p>Hi</p>
-  <button>Toggle</button>
-
-
+  <div id="main">
+    <ul id="list">
+      <li>Google</li>
+      <li>Amazon</li>
+      <li>Facebook</li>
+    </ul>
+  </div>
 
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript">
-  	$('a').prop("href","https://www.google.com");
-  </script>
-  <script type="text/javascript">
-    $('button').click(function() {
-      if($('p').text() == "Hello") {
-        $('p').text("Hi");
-      } else {
-        $('p').text("Hello");
-      }
+    $('#main').click(function() {
+      console.log("Div clicked!");
+    });
+    $('#list').on('click', function(e) {
+      console.log("Div is not considered to be clicked here");
+      e.stopPropagation();
     });
   </script>
 </body>

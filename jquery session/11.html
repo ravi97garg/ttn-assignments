@@ -11,21 +11,17 @@
   <!-- <link href="css/normalize.css" rel="stylesheet"> -->
   <!-- <link href="css/style.css" rel="stylesheet"> -->
 </head>
+
 <body>
-  <div id="main">
-    <button id="appendClick">Click</button>
-  </div>
+
+  <a id="google" href="https://www.google.com">Google</a>
 
 
-  <p id="test"></p>
 
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript">
-    $("#appendClick").click(function() {
-      $("#main").append("<button class='alert1'>Click</button>");
-    });
-     $("#main").on("click", ".alert1", function() {
-      alert("Click event added");
+    $('#google').click(function(e) {
+      e.preventDefault();
     });
   </script>
 </body>

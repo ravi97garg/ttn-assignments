@@ -10,24 +10,41 @@
 
   <!-- <link href="css/normalize.css" rel="stylesheet"> -->
   <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <style type="text/css">
+    ul {
+      list-style-type: none;
+      display: none;
+    }
+  </style>
 </head>
 <body>
-	<label for="vehicle">Selevt a Vehicle</label>
+	<!-- <label for="vehicle">Select a Vehicle</label>
 	<select id="vehicle" name="vehicle">
 	    <option value="car">Car</option>
 	    <option value="bike">Bike</option>
 	    <option value="train">Train</option>
 	    <option value="bus">Bus</option>
 	</select>
+ -->
+  <div id="main">
+    <button id="hover-btn">Hover me</button>
+    <ul>
+      <li class="hoverClass">Delhi</li>
+      <li class="hoverClass">Mumbai</li>
+      <li class="hoverClass">Bangalore</li>
+      <li class="hoverClass">Kolkata</li>
 
-  <div id="main"></div>
+    </ul>
+  </div>
 
   <p id="test"></p>
 
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript">
-    $("#vehicle").hover(function() {
-      $("#vehicle").slideDown();
+    $("#hover-btn").hover(function() {
+      $('ul').slideDown();
+    }, function() {
+      $('ul').slideUp();
     });
   </script>
 </body>

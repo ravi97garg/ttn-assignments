@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- <link href="css/normalize.css" rel="stylesheet"> -->
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+</head>
+<body>
+
+
+  <div id="main">
+    <h1>Welcome to jQuery Sessions</h1>
+    <h2>jQuery - the JS library</h2>
+    <h3>Hello guys</h3>
+    <h4>I am getting shorter</h4>
+    <h5>Maybe I would disappear soon</h5>
+    <h6>I'm gone for sure!</h6>
+  </div>
+
+  <p id="test"></p>
+
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).on('load', function() {
+      var maxHeight = 0;
+      $("#main").children().each(function() {
+        // console.log($(this).height());
+        if($(this).height() > maxHeight) {
+          maxHeight = $(this).height();
+        }
+      });
+      alert("Maximum Height is "+maxHeight);
+    })
+    
+  </script>
+</body>
+
+</html>
