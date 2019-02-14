@@ -10,7 +10,6 @@ list = [
   { name: 'Mansi', age: 18, salary: 200, dob: '1/3/2011'},
   { name: 'Shivani', age: 22, salary: 500, dob: '20/2/2011'},
   { name: 'Khwaza', age: 23, salary: 20000, dob: '21/12/2011'},
-    
 ];
 
 function filterSalaryGreaterThan5000() {
@@ -35,18 +34,18 @@ function filterSalaryLessThan1000AndAgeGreaterThan20() {
 function groupByAge() {
   document.getElementById("empDetails").innerHTML = '';
   for(i=10; i<100; i+=10) {
-    groupDisplay(list.filter(elem => elem.age > i && elem.age <= (i+10)));
+    groupDisplay(list.filter(elem => elem.age > i && elem.age <= (i+10)), i, i+10);
   }
 }
 
-function groupDisplay(outputList) {
+function groupDisplay(outputList, start, end) {
   if(outputList == undefined) {
     outputList = list;
   }
   if(outputList.length == 0) {
     return;
   }
-  output = "<table><tr><th>Name</th><th>Age</th><th>Salary</th><th>DOB</th></tr>"
+  output = "<table><thead><u><b>Age Range "+start+"-"+end+"</b></u></thead><tr><th>Name</th><th>Age</th><th>Salary</th><th>DOB</th></tr>"
   var i = -1;
   for(elem in outputList) {
     i++;
