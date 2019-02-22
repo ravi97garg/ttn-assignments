@@ -1,0 +1,53 @@
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body {
+	font-size: 18px;
+}
+
+#strike {
+	text-decoration: line-through;
+}
+
+#breakWords {
+	width: 30px;
+	height: auto;
+	word-break: break-all;
+}
+
+#hideContent {
+	width: 216px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#tryEm {
+	font-size: 1.2em;
+}
+
+#tryEm p {
+	font-size: 1.2em;
+}
+
+#tryRem {
+	font-size: 1.2rem;
+}
+
+#tryRem p {
+	font-size: 1.2rem;
+}
+
+#indentPara {
+	text-indent: 50px;
+}
+
+#shadowedText {
+	font-size: 50px;
+	text-shadow: 4px 4px 2px #dedede;
+}
