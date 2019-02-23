@@ -1,0 +1,144 @@
+<html>
+<head>
+	<style type="text/css">
+		body {
+  margin: 50px;
+}
+
+::-webkit-input-placeholder {
+  direction: rtl;
+}
+
+fieldset.form-group {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  top: .6rem;
+  left: 1rem;
+  transition: all .1s ease-in-out;
+  cursor: text;
+}
+
+:focus + label {
+  color: #66afe9;
+  top: -.9rem;
+  background: white;
+}
+
+
+/*input {
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+
+:focus::-webkit-input-placeholder {
+  transition: all 1s ease-in-out;
+  color: red;
+          position:absolute;
+          top:75%;
+          left:0.5rem;
+          transform: translate(0%, -75%);
+            padding:0 0.25rem;
+  background-color: white;
+}
+
+
+/*input {
+  
+      box-sizing:border-box;
+      width:100%;
+      padding:10px;
+      border:1px solid #ddd;
+      border-radius:4px;
+      transition:all 0.5s ease-in-out;
+      outline:0;
+
+      + label[data-placeholder] {
+        pointer-events:none;
+
+        &:after {
+          content:attr(data-placeholder);
+          display:block;
+          position:absolute;
+          top:50%;
+          left:0.5rem;
+          transform: translate(0%, -50%);
+          transition:all 0.5s ease-in-out;
+          padding:0 0.25rem;
+          background-color:rgba(255,255,255,0);
+        }
+}
+*/
+
+
+	</style>
+</head>
+<body>
+	<form class="container">
+  <fieldset class="form-group">
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    <label for="exampleInputEmail1">Email address</label>
+    <small class="text-muted">We'll never share your email with anyone else.</small>
+  </fieldset>
+  <fieldset class="form-group">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <label for="exampleInputPassword1">Password</label>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleSelect1">Example select</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleTextarea">Example textarea</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" class="form-control-file" id="exampleInputFile">
+    <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+  </fieldset>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+      Option one is this and that&mdash;be sure to include why it's great
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+      Option two can be something else and selecting it will deselect option one
+    </label>
+  </div>
+  <div class="radio disabled">
+    <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+      Option three is disabled
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
