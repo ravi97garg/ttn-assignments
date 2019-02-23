@@ -1,0 +1,106 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	background-color: #eee;
+	padding: 10px;
+}
+
+.logo, nav, .socialIcons, .socialIcons li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.logo img {
+	width: 100px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #888;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+nav a:focus {
+	outline: none;
+}
+
+.socialIcons {
+	list-style: none;
+}
+
+.content {
+	width: 80%;
+	margin: auto;
+}
+
+#path {
+	color: red;
+	padding: 6px;
+	font-size: 12px;
+	background-color: #fafafa;
+}
+
+#banner-margin img {
+	width: 100%;
+	object-fit: cover;
+    height: auto;
+}
+
+#banner-margin {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 480px;
+	overflow: hidden;
+}
+
+#features {
+	background-color: #ddd;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.card {
+	background-color: #fff;
+}
+
+#features .content ul li {
+	padding: 1%;
+	margin: 1%;
+	display: inline-block;
+	width: 20.5%;
+	text-align: center;
+	position: relative;
+	padding-bottom: 3%; 
+}
+
+.title {
+	color: red;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+#features .content ul {
+	width: 100%;
+}
+
+#feaures .content {
+	margin: auto;
+}
+
+#features .content ul li button {
+	display: inline-block;
+	background-color: red;
+	color: white;
+	padding: 8px;
+	border: 1px solid red;
+	position: absolute;
+	top: 96%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 50%;
+}
