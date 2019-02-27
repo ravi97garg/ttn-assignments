@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="img-wrapper">
+        <img src="assets/logo.png" alt="logo">
+      </div>
+      <div class="floating-div">
+        <nav class="navigation">
+          <i class="fas fa-home"></i>
+          <ul class="menu">
+            <li class="menu-list">About</li>
+            <li class="menu-list">
+              Ecosystems
+              <ul class="submenu">
+                <li class="submenu-list">Hello</li>
+                <li class="submenu-list">World</li>
+              </ul>
+            </li>
+            <li class="menu-list">Resources</li>
+            <li class="menu-list">Contact Us</li>
+          </ul>
+        </nav>
+        <div class="profile-wrapper">
+          <div class="icon-wrapper">
+            <i class="fas fa-user-alt"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <div class="slide-content">
+            <img src="assets/banner-bg.jpg" />
+            <div class="banner-text">
+              <h3>Partners</h3>
+              <p>Interested in becoming a partner?</p>
+              <button>Get Involved</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-content">
+            <img src="assets/banner-bg.jpg" />
+            <div class="banner-text">
+              <h3>Partners</h3>
+              <p>Interested in becoming a partner?</p>
+              <button>Get Involved</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-content">
+            <img src="assets/banner-bg.jpg" />
+            <div class="banner-text">
+              <h3>Partners</h3>
+              <p>Interested in becoming a partner?</p>
+              <button>Get Involved</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slide-content">
+            <img src="assets/banner-bg.jpg" />
+            <div class="banner-text">
+              <h3>Partners</h3>
+              <p>Interested in becoming a partner?</p>
+              <button>Get Involved</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="meet">
+    <h3>Featured Videos</h3>
+    <section style="background-color: #fff; margin-top: 20px;">
+      <div style="width: 60%; display: inline-block;">
+        <div class="vid-wrapper" style="display: inline-block;">
+          <img src="assets/image1.png" style="height: 100%;width: 100%;">
+        </div>
+      </div>
+      <div style="width: 38%; display: inline-block;">
+        <ul style="width: 100%;">
+          <li>
+            <div class="thumb">
+              <img src="assets/image2.png">
+            </div>
+            <div class="details">
+              <span class="name">Juhee Ahmed</span>
+              <span class="description">CEO, Fab Ci</span>
+            </div>
+          </li>
+          <li>
+            <div class="thumb">
+              <img src="assets/image2.png">
+            </div>
+            <div class="details">
+              <span class="name">Juhee Ahmed</span>
+              <span class="description">CEO, Fab Ci</span>
+            </div>
+          </li>
+          <li>
+            <div class="thumb">
+              <img src="assets/image2.png">
+            </div>
+            <div class="details">
+              <span class="name">Juhee Ahmed</span>
+              <span class="description">CEO, Fab Ci</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.1/jquery.flexslider.min.js"></script>
+  <script type="text/javascript">
+    $('.flexslider').flexslider({
+          animation: "slide"
+        });
+
+    $('.menu-list').on('hover', function() {
+    $('.submenu').addClass('.show-submenu');
+});
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+header {
+	width: 100%;
+	height: 111px;
+	background: url('../assets/header_bg.jpg') center no-repeat;
+}
+
+.header-container {
+	padding: 26px;
+}
+
+.navigation, .navigation .menu, .navigation .menu .menu-list, .img-wrapper, .profile-wrapper {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navigation .menu {
+	position: relative;
+}
+
+.submenu {
+	display: none;
+}
+
+.show-submenu {
+	display: block;
+}
+
+.navigation .menu .menu-list {
+	color: #fff;
+	padding: 12px 24px;
+	font-weight: 900;
+	border-bottom: 3px solid transparent;
+}
+
+.navigation .menu .menu-list:hover {
+	border-color: #fff;
+}
+
+.border-nav {
+	border-color: #fff;
+}
+
+.navigation {
+	padding: 14px;
+}
+
+.navigation i {
+	color: white;
+}
+
+.icon-wrapper {
+	height: 42px;
+	width: 42px;
+	background-color: #fff;
+	border: 2px solid #ffb53d;
+	border-radius: 21px;
+	text-align: center;
+	line-height: 42px;
+	color: #ed6300;
+}
+
+.floating-div {
+	display: inline-block;
+	float: right;
+}
+
+.content {
+	clear: both;
+}
+
+.content .flexslider .slides li {
+	max-width: 100%;
+}
+
+.banner-text {
+	position: absolute; 
+	top: 60px; 
+	text-align: center; 
+	width: 100%;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.slide-content {
+	position: relative;
+}
+
+.banner-text h3 {
+	font-size: 60px;
+	font-weight: bolder;
+	padding: 14px;
+}
+
+.banner-text button {
+	background: linear-gradient(to left, #f93f04, #ec6519);
+	border: 1px solid transparent;
+	margin: 20px 0;
+	border-radius: 40px;
+	padding: 14px 30px;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+}
+
+.banner-text button:focus {
+	outline: none;
+}
+
+.flexslider ol{
+	/*visibility: hidden;*/
+	display: none;
+}
+.flexslider{
+	background:none;
+	border:none;
+	box-shadow:none;
+	margin:0px;
+}
+
+.meet {
+	text-align: center;
+	background-color: #eee;
+	padding: 60px 20px 40px 20px;
+}
+
+.meet h3 {
+	font-weight: bold;
+	font-size: 50px;
+	color: #3e4754;
+}
+
+.name {
+	display: block;
+	color: #3e4754;
+	font-weight: bold;
+}
+
+.description {
+	display: block;
+	color: #aaa;
+}
+
+.thumb, .details {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
