@@ -97,34 +97,36 @@
   <section class="meet">
     <h3>Featured Videos</h3>
     <section style="background-color: #fff; margin-top: 20px;">
-      <div style="width: 60%; display: inline-block;">
+      <div style="width: 60%; display: inline-block; vertical-align: top;">
         <div class="vid-wrapper" style="display: inline-block;">
           <img src="assets/image1.png" style="height: 100%;width: 100%;">
         </div>
       </div>
-      <div style="width: 38%; display: inline-block;">
-        <ul style="width: 100%;">
-          <li>
-            <div class="thumb">
-              <img src="assets/image2.png">
+      <div style="width: 38%; display: inline-block; vertical-align: top; padding: 20px 0;">
+        <ul style="width: 100%; text-align: left;">
+          <li style="padding: 12px;">
+            <div class="thumb" style="-webkit-box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.75);">
+              <img src="assets/image3.png">
             </div>
             <div class="details">
               <span class="name">Juhee Ahmed</span>
               <span class="description">CEO, Fab Ci</span>
             </div>
           </li>
-          <li>
-            <div class="thumb">
-              <img src="assets/image2.png">
+          <li style="padding: 12px;">
+            <div class="thumb" style="box-shadow: 5px;">
+              <img src="assets/image3.png">
             </div>
             <div class="details">
               <span class="name">Juhee Ahmed</span>
               <span class="description">CEO, Fab Ci</span>
             </div>
           </li>
-          <li>
-            <div class="thumb">
-              <img src="assets/image2.png">
+          <li style="padding: 12px">
+            <div class="thumb" style="box-shadow: 5px;">
+              <img src="assets/image3.png">
             </div>
             <div class="details">
               <span class="name">Juhee Ahmed</span>
@@ -147,9 +149,20 @@
           animation: "slide"
         });
 
-    $('.menu-list').on('hover', function() {
-    $('.submenu').addClass('.show-submenu');
-});
+    $('.menu li').hover( function() {
+
+    })
+
+//     $('.menu-list').on('hover', function() {
+//       console.log("hello")
+//     $('.submenu').addClass('.show-submenu');
+// });
+  //   $( ".menu-list" ).hover(
+  // function() {
+  //     console.log("hello")
+  //   $('.submenu').addClass('.show-submenu');
+  // }
+// );
   </script>
 </body>
 

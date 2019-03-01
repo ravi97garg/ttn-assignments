@@ -149,3 +149,11 @@ header {
 	vertical-align: middle;
 	text-align: left;
 }
+
+.thumb {
+	width: 120px;
+}
+
+.thumb img{
+	width: 100%;	
+}
