@@ -1,0 +1,77 @@
+html,body{
+	height: 100%;
+}
+.container-div {
+    height:100%;
+    width: 100%;
+    background: url("../assets/bg.png"), center,  no-repeat;
+    background-size: cover;
+}
+.content {
+	height: 500px;
+	width: 500px;
+	background: url("../assets/image.jpeg") center center no-repeat;
+	border: 1px solid #000;
+	overflow: scroll;
+	background-attachment: local;
+}
+
+/*Q. 4*/
+/*.content p{
+	background-color: #f00;
+}*/
+
+footer {
+	height: 100%;
+	width: 100%;
+}
+.fb-icon-bg {
+	width: 128px;
+	height: 128px;
+	display: inline-block;
+	background-image: url("../assets/facebook.png");
+}
+.insta-icon-bg {
+	width: 128px;
+	height: 128px;
+	display: inline-block;
+	background-image: url("../assets/instagram.png");
+}
+.twitter-icon-bg {
+	width: 128px;
+	height: 128px;
+	display: inline-block;
+	background-image: url("../assets/twitter.png");
+}
+
+.animate1 {
+	height: 100px;
+	width: 100px;
+	animation-name: opacity;
+	animation-duration: 4s;
+	animation-delay: 3s;
+	background-color: #400;
+	color: white;
+}
+
+@keyframes opacity{
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 0.5}
+}
+
+.animate2 {
+	height: 100px;
+	width: 200px;
+	background-color: #ff00ff;
+	border: 1px solid #000;
+	transition: width 1s, height 1s, transform 1s;
+}
+
+.animate2:active {
+	height: 200px;
+	width: 100px;
+	background-color: #000;
+	border-color: 2px solid #ff00ff;
+	transform: scale(2, 3);
+} 
