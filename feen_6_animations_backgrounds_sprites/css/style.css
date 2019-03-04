@@ -17,31 +17,37 @@ html,body{
 }
 
 /*Q. 4*/
-/*.content p{
+.content p{
 	background-color: #f00;
-}*/
+}
 
 footer {
 	height: 100%;
 	width: 100%;
 }
+
+.fb-icon-bg, .insta-icon-bg, .twitter-icon-bg {
+	background-image: url("https://image.flaticon.com/sprites/share/packs/174834-social-media-logos.png");
+	background-repeat: no-repeat;
+}
+
 .fb-icon-bg {
 	width: 128px;
-	height: 128px;
+	height: 135px;
+    background-position: -236px -23px;
 	display: inline-block;
-	background-image: url("../assets/facebook.png");
 }
 .insta-icon-bg {
 	width: 128px;
-	height: 128px;
+	height: 135px;
+    background-position: -38px -23px;
 	display: inline-block;
-	background-image: url("../assets/instagram.png");
 }
 .twitter-icon-bg {
 	width: 128px;
-	height: 128px;
+	height: 135px;
+    background-position: -435px -21px;
 	display: inline-block;
-	background-image: url("../assets/twitter.png");
 }
 
 .animate1 {
