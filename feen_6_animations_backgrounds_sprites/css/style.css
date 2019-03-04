@@ -56,6 +56,7 @@ footer {
 	animation-name: opacity;
 	animation-duration: 4s;
 	animation-delay: 3s;
+	animation-iteration-count: 2;
 	background-color: #400;
 	color: white;
 }
