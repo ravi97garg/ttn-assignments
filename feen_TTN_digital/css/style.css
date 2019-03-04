@@ -137,7 +137,8 @@ clear: both;
   height: 100%;
   padding: 50px 30px; 
   box-sizing: border-box;
-  background: linear-gradient(to bottom , transparent,#ffffff), url('http://unsplash.it/1200x800') center center no-repeat;
+  /*background: linear-gradient(to bottom , transparent,#ffffff), url('http://unsplash.it/1200x800') center center no-repeat;*/
+  background: url('../assets/bground.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -528,7 +529,7 @@ direction: rtl;
 	padding: 10px 22px;
 	border: 1px solid red;
 	color: red;
-	background-color: white;
+	background-color: transparent;
 	border-radius: 2px;
 	font-weight: bold;
 }
@@ -554,4 +555,12 @@ direction: rtl;
 
 .white {
 	background-color: white;
+}
+
+.ad-card li{
+	text-align: center;
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
 }
