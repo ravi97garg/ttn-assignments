@@ -168,7 +168,6 @@ clear: both;
 .powered {
 	background-color: #f8f8f8;
 	padding: 30px 0;
-	float: left;
 }
 
 .powered-title {
@@ -478,14 +477,19 @@ clear: both;
 	border: none;
 }
 
-.left-cards {
+.card {
 	clear: both;
-	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
-.right-cards > *{
-	float: right;
-	text-align: right;
+.card:nth-of-type(odd) {
+text-align: left;
+}
+    
+.card:nth-of-type(even) {
+text-align: right;
+direction: rtl;
 }
 
 .img-wrapper {
@@ -502,4 +506,52 @@ clear: both;
 	width: 25%;
 	display: inline-block;
 	vertical-align: middle;
+	padding: 20px;
+}
+
+.text > * {
+	display: block;
+	margin-top: 16px;
+}
+
+.text h3 {
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.text p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.text button {
+	padding: 10px 22px;
+	border: 1px solid red;
+	color: red;
+	background-color: white;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+.top-bar > .secondary-nav > li {
+	position: relative;
+	display: inline-block;
+}
+
+.top-bar > .secondary-nav > li > ul {
+	display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.top-bar > .secondary-nav > li:hover .top-bar > .secondary-nav > li > ul{
+	z-index: 20;
+	display: block;
+}
+
+.white {
+	background-color: white;
 }
