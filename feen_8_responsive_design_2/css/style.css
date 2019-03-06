@@ -24,6 +24,12 @@ hr{
     padding: 0;
 }
 
+.clearfix:after{
+content:'';
+display: "block";
+clear: both;
+}
+
 .content{
 	width: 90%;
 	margin: 0 auto;
@@ -31,23 +37,23 @@ hr{
 
 #main {
 	width: 100%;
-	height: 900px;
 	background: url("../assets/banner.jpg") center top no-repeat;
-	/*box-shadow: inset 0 0 0 100px rgba(36, 7, 10, 0.74);*/
 	background-size: cover;
-	/*background-size:100% 100%;*/
-	position: relative;
 	padding-bottom: 20px;
+	position: relative;
 }
 .black-glass {
 	background: rgba(36, 7, 10, 0.74);
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
+}
+.bind{
+	position: relative;
 }
 #nav {
 	float: right;
