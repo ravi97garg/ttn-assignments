@@ -35,7 +35,9 @@ hr{
 	background: url("../assets/banner.jpg") center top no-repeat;
 	/*box-shadow: inset 0 0 0 100px rgba(36, 7, 10, 0.74);*/
 	background-size: cover;
+	/*background-size:100% 100%;*/
 	position: relative;
+	padding-bottom: 20px;
 }
 .black-glass {
 	background: rgba(36, 7, 10, 0.74);
@@ -66,6 +68,10 @@ hr{
 	padding-bottom: 40px;
 	color: white;
 	font-weight: bolder;
+}
+.heading > i{
+	float: right;
+	display: none;
 }
 .banner-text {
 	padding: 50px;
@@ -207,4 +213,29 @@ textarea {
 	margin-top: 50px;
 	padding: 4px;
 	display: block;
+}
+
+@media (max-width: 780px) {
+  .cards li{
+  	display: block;
+  	border: none;
+  	padding-bottom: 20px;
+  }
+  #main{
+  	height: 845px;
+  }
+  .feature {
+  	width: 100%;
+  	padding: 20px 0;
+  }
+  .half {
+  	width: 100%;
+  }
+  .heading > i{
+	display: block;
+	position: relative;
+}
+  .heading > ul{
+  	display: none;
+  }
 }
