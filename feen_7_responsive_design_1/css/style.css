@@ -214,28 +214,34 @@ textarea {
 	padding: 4px;
 	display: block;
 }
-
-@media (max-width: 780px) {
-  .cards li{
-  	display: block;
-  	border: none;
-  	padding-bottom: 20px;
-  }
-  #main{
-  	height: 845px;
-  }
-  .feature {
-  	width: 100%;
-  	padding: 20px 0;
-  }
-  .half {
-  	width: 100%;
-  }
-  .heading > i{
-	display: block;
-	position: relative;
+@media (max-width: 820px) {
+	.banner-text{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#main{
+		height: 845px;
+	}
+	.feature {
+		width: 100%;
+		padding: 20px 0;
+	}
+	.half {
+		width: 100%;
+	}
+	.heading > i{
+		display: block;
+		position: relative;
+	}
+	.heading > ul{
+		display: none;
+	}
 }
-  .heading > ul{
-  	display: none;
-  }
+
+@media (max-width: 740px) {
+	.cards li{
+		display: block;
+		border: none;
+		padding-bottom: 20px;
+	}
 }
