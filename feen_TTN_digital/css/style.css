@@ -55,7 +55,7 @@ clear: both;
 }
 
 .banner {
-	clear: both; 
+	/*clear: both; */
 	text-align: center;
 }
 
@@ -137,7 +137,7 @@ clear: both;
   height: 100%;
   padding: 50px 30px; 
   box-sizing: border-box;
-  /*background: linear-gradient(to bottom , transparent,#ffffff), url('http://unsplash.it/1200x800') center center no-repeat;*/
+/*  background: linear-gradient(to bottom , transparent,#ffffff), url('http://unsplash.it/1200x800') center center no-repeat;*/
   background: url('../assets/bground.jpg') center center no-repeat;
   background-size: cover;
 }
