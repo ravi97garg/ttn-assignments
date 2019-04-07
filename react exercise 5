@@ -1,0 +1,12 @@
+PPT: https://docs.google.com/presentation/d/1-2GunJViWOWcUHkCCWz15Q9-opq9oqZD1feUjdWQcwc/edit?usp=sharing
+
+PPT: https://docs.google.com/presentation/d/15v7Sucuputcasb82GwZIQzZlMbIfFnPWiXf8VXlsoAQ/edit?usp=sharing
+
+
+Exercise	
+
+exercise 5a Create an HOC in React to get and set the login related info of current user in component props. The data can be logginStatus, userInfo etc. Use the context api of react to set the data and top and use the HOC to get the data in the child components.'
+https://github.com/ravi97garg/Pledging_HOC
+
+exercise 5b Create a landing page of an ecommerce website. It should have a carousel with some text over it and some product’s listing. Example - https://ibb.co/1n2y9s8
+https://github.com/ravi97garg/myntra
